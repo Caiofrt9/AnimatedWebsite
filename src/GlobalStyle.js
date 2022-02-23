@@ -50,6 +50,12 @@ p{
     display: inline-block;
 }
 
+.title-con{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
 `
 
 export default GlobalStyle

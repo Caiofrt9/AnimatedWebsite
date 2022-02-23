@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Navigation from './Navigation'
 import SmallHeading from './SmallHeading'
 import blockchain from '../img/bchain.png'
+import CtaButton from './CtaButton'
 
 function MainContent() {
   return (
@@ -27,6 +28,11 @@ function MainContent() {
             molestiae temporibus voluptatum consectetur, quibusdam magni,
             delectus a autem soluta optio laborum!
           </p>
+
+          <div className="btns-con">
+            <CtaButton name={'Discover More'} />
+            <CtaButton name={'Get Help'} />
+          </div>
         </div>
         <div className="right">
           <img src={blockchain} alt="" />
@@ -48,6 +54,9 @@ const MainContentStyled = styled.div`
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
     width: 100%;
+    .btns-con {
+      margin-top: 2rem;
+    }
     .left {
       display: flex;
       justify-content: center;
