@@ -56,6 +56,12 @@ p{
   margin: 0 auto;
 }
 
+.gradient-cards-con{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+}
+
 `
 
 export default GlobalStyle
