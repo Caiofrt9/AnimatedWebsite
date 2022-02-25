@@ -1,22 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../img/logo2.png'
 
 function Navigation() {
   return (
     <NavigationStyled>
-      <div className="logo">
-        <img src={logo} />
-      </div>
-
+      <h1>LOGO</h1>
       <ul className="nav-items">
         <li href="">Home</li>
         <li href="">About</li>
-        <li href="">FAQs</li>
-        <li href="">Activity</li>
-        <li href="">Contact</li>
+        <li href="">Portifolios</li>
+        <li href="">Blogs</li>
+        {/* <li href="">Contact</li> */}
 
-        <div className="primary-btn">GET CONNECTD</div>
+        <div className="primary-btn">Contact</div>
       </ul>
     </NavigationStyled>
   )
@@ -25,6 +21,7 @@ function Navigation() {
 const NavigationStyled = styled.nav`
   min-height: 10vh;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   .nav-items {
@@ -43,12 +40,6 @@ const NavigationStyled = styled.nav`
       &:hover {
         background-color: rgba(57, 95, 246, 1);
       }
-    }
-  }
-
-  .logo {
-    img {
-      width: 60px;
     }
   }
 `

@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import business from '../img/marketing.mp4'
-import circles from '../img/circles.svg'
 import { InnerLayout } from '../layouts'
 import MainContent from './MainContent'
 
@@ -9,8 +8,6 @@ function MainArea() {
   return (
     <MainAreaStyled>
       <video src={business} muted playsInline autoPlay loop></video>
-      <img src={circles} alt="" className="overlay"></img>
-
       <InnerLayout>
         <MainContent />
       </InnerLayout>

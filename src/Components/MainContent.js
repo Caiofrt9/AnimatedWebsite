@@ -2,41 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 import Navigation from './Navigation'
 import SmallHeading from './SmallHeading'
-import blockchain from '../img/bchain.png'
+
 import CtaButton from './CtaButton'
 
 function MainContent() {
   return (
     <MainContentStyled>
       <Navigation />
-      <div className="content">
-        <div className="left">
-          <SmallHeading
-            title={'All Digital Currencies in One Place'}
-            identifier={'Before'}
-          />
-
-          <h1>
-            All NFTs You need in One Marketplace The Best Place to Collect , Buy
-            and Sell <span className="GradientText">Awesome NFTs</span>
-          </h1>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id
-            unde officiis hic nihil, quasi soluta ex corrupti nesciunt dolorem.
-            Cumque obcaecati sint officiis quis laboriosam vitae, error
-            molestiae temporibus voluptatum consectetur, quibusdam magni,
-            delectus a autem soluta optio laborum!
-          </p>
-
-          <div className="btns-con">
-            <CtaButton name={'Discover More'} />
-            <CtaButton name={'Get Help'} />
-          </div>
+      <div className="hero">
+        <div className="hero-text">Hi, I am Caio Fernando</div>
+        <div className="subtitle">
+          <SmallHeading title={'Front End Developer'} identifier={'Before'} />
         </div>
-        <div className="right">
-          <img src={blockchain} alt="" />
-        </div>
+
+        <div className="icons"></div>
       </div>
     </MainContentStyled>
   )
@@ -49,6 +28,22 @@ const MainContentStyled = styled.div`
   transform: translateX(-50%);
   width: 80%;
   height: 100%;
+
+  .hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    .hero-text {
+      display: flex;
+      font-size: 50px;
+    }
+  }
+
+  .subtitle {
+    align-items: center;
+  }
   .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -62,20 +57,21 @@ const MainContentStyled = styled.div`
       justify-content: center;
       flex-direction: column;
       h1 {
-        padding: 1.8rem 0;
+        padding: 1rem 0;
+        font-size: 5rem;
       }
       .btns-con {
         margin-top: 3rem;
       }
     }
-    .right {
+    /* .right {
       img {
         position: absolute;
         right: -11%;
         bottom: -1%;
         width: 60%;
       }
-    }
+    } */
   }
 `
 export default MainContent

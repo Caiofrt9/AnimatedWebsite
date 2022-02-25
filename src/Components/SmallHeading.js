@@ -16,6 +16,7 @@ const SmallHeadingStyled = styled.div`
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     display: inline-block;
+    font-size: 1.5rem;
   }
 `
 

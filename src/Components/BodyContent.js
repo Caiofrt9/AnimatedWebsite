@@ -1,12 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { InnerLayout, SectionStyled } from '../layouts'
-import BlogsSection from './BlogsSection'
+
 import ContactSection from './ContactSection'
-import DemonstrationSection from './DemonstraitionSection'
-import GradientCardsSection from './GradientCardsSection'
+
 import MainTitle from './MainTitle'
-import SellerCard from './SellerCard'
 
 function BodyContent() {
   return (
@@ -16,16 +14,6 @@ function BodyContent() {
           title={'Top Sellers This Month'}
           subtitle={'All Entrepreneurs'}
         />
-        <div className="sellercards">
-          <SellerCard />
-          <SellerCard />
-          <SellerCard />
-        </div>
-        <BlogsSection />
-        <GradientCardsSection>
-          <SectionStyled></SectionStyled>
-        </GradientCardsSection>
-        <DemonstrationSection />
       </InnerLayout>
       <ContactSection />
       <footer>
